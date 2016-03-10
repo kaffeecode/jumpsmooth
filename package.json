@@ -1,0 +1,19 @@
+{
+  "name": "kc-jump-smooth",
+  "version": "0.0.1",
+  "description": "jump smooth",
+  "main": "jumpSmooth.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/kaffeecode/jumpsmooth.git"
+  },
+  "keywords": [
+    "jquery"
+  ],
+  "author": "oojuloo",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/kaffeecode/jumpsmooth#readme"
+}
