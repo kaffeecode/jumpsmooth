@@ -30,6 +30,7 @@
     if(history) {
       $(window)
         .on('popstate.kcJumpSmooth', ()=> {
+          event.preventDefault();
           const hash = $(`${location.hash}`);
 
           if(!clicked && hash.hasClass('kc-smooth') && isInScope.call(this))
