@@ -1,11 +1,11 @@
 // TODO: JUMP INS LEERE (OHNE ANKER)
 
 (function initialize($) {
-  const defaultTarget = $('html, body');
-
   $.fn.kcJumpSmooth = function kcJumpSmooth(
     {target, direction, offset,
       normalize, normalizeOffset, history} = {}) {
+    const defaultTarget = $('html, body');
+
     target = target || defaultTarget;
     direction = direction || 'Top';
     offset = offset || 0;
@@ -66,6 +66,7 @@
         prevHash.attr('id', hash.replace('#', ''));
       }
       scrollAttr[`scroll${direction}`] = `${scrollValue}px`;
+
       target.clearQueue().animate(scrollAttr, ()=> {
         clicked = false;
       });
